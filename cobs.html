@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syair Lagu - The Zephyr Song</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Beranda</a>
+      <a href="tentang saya.html">Tentang Saya</a>
+      <a href="cobs.html">Syair Lagu</a>
+      <a href="tabel.html">Jadwal</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">Menghitung ▾</button>
+        <div class="dropdown-content">
+          <a href="luas.html">Luas</a>
+          <a href="volume.html">Volume</a>
+
+        </div>
+      </div>
+    </div>
+     <div class="nav-right">
+    
+      <button class="nav-button" onclick="window.location.href='lgin.html'">Log in</button>
+      <button class="nav-button" onclick="window.location.href='sign in.html'">Sign up</button>
+    </div>
+  </nav>
+  </nav>
+
+  <!-- 🎵 Lagu Section -->
+  <section class="lyrics-section fade-up">
+    <h1>Red Hot Chili Peppers – The Zephyr Song</h1>
+    <h2>Tuning: E A D G B E | Key: Am</h2>
+
+    <button class="music-btn" onclick="toggleMusic()">Putar Lagu 🎵</button>
+    <audio id="myAudio" src="The_Zephyr_Song_2014_Remaster_Red_Hot_Chili_Peppers_2002.flac"></audio>
+
+    <div class="lyrics-container" id="lyrics">
+      <!-- Intro -->
+      <div class="lyrics-block" data-time="0">
+        <div class="chord-line">e|--------3------------1------------------------------|</div>
+        <div class="chord-line">B|-----1------------0---------------0------------1----</div>
+        <div class="chord-line">G|--2------------0---------------0------------2-------</div>
+        <div class="chord-line">D|----------------------------2------------3----------</div>
+        <div class="chord-line">A|----------------------------------------------------</div>
+        <div class="chord-line">E|---------------------------------------------------- x2</div>
+        <div class="lyrics-line">[Intro]</div>
+      </div>
+
+      <!-- Verse -->
+      <div class="lyrics-block" data-time="16.000">
+        <div class="chord-line">Am                                     G</div>
+        <div class="lyrics-line">Can I get your hand to write on. Just a piece of leg to bite on</div>
+      </div>
+      <div class="lyrics-block" data-time="20.000">
+        <div class="chord-line">Em                                     F</div>
+        <div class="lyrics-line">What a night to fly my kite on. Do you want to flash your light on</div>
+      </div>
+      <div class="lyrics-block" data-time="25.000">
+    <div class="chord-line">Am                     G       Em                       F</div>
+    <div class="lyrics-line">Take a look it’s on display for you. Coming down, no not today</div>
+  </div>
+  <div class="lyrics-block" data-time="32.000">
+    <div class="chord-line">Am                                            G</div>
+    <div class="lyrics-line">Did you meet your fortune teller. Get it off with no propeller</div>
+
+  </div>
+  <div class="lyrics-block" data-time="37.000">
+    <div class="chord-line">Em                                              F</div>
+    <div class="lyrics-line">Do it up, it’s on with Stella. What a way to finally smell her</div>
+  </div>
+  <div class="lyrics-block" data-time="41.000">
+    <div class="chord-line">Am                     G       Em                       F</div>
+    <div class="lyrics-line">Pick it up, but not to strong … for you. Take a piece and pass it on</div>
+      
+    </div>
+     <div class="lyrics-block" data-time="51.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">Fly away on my Zephyr. I feel it more than ever</div>
+      
+    </div>
+
+   
+     <div class="lyrics-block" data-time="60.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">And in this perfect weather. We’ll find a place together</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="67.000">
+    <div class="chord-line">Am                     G       Em                       F</div>
+    <div class="lyrics-line">Fly on … my wind</div>
+      </div>
+    
+
+    <div class="lyrics-block" data-time="76.000">
+    <div class="chord-line">Am                                 G</div>
+    <div class="lyrics-line">Rebel and a liberator. Find a way to be a skater</div>
+      
+    </div>
+    <div class="lyrics-block" data-time="80.000">
+    <div class="chord-line">Em                                 F</div>
+    <div class="lyrics-line">Rev it up to levitate her. Super friendly aviator</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="84.000">
+    <div class="chord-line">Am                     G       Em                       F</div>
+    <div class="lyrics-line">Take a look it’s on display … for you. Comin’ down, no not today</div>
+    </div>
+
+      <div class="lyrics-block" data-time="94.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">Fly away on my Zephyr. I feel it more than ever</div>
+      
+    </div>
+
+   
+     <div class="lyrics-block" data-time="102.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">And in this perfect weather. We’ll find a place together</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="111.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">In the water where I center my emotion. All the world can pass me by</div>
+      
+    </div>
+    <div class="lyrics-block" data-time="119.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">Fly away on my Zephyr. We’ll find a place together</div>
+      
+    </div>
+    
+    <div class="lyrics-block" data-time="127.000">
+    <div class="chord-line">Am                     G       Em                       F 2X</div>
+    <div class="lyrics-line">Am                     G       Em                       F 2X</div>
+    
+  </div>
+
+
+    <div class="lyrics-block" data-time="142.000">
+    <div class="chord-line">Am                                 G</div>
+    <div class="lyrics-line">Whoa, whoa, whoa, whoa, whoa, whoa – do you</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="147.000">
+    <div class="chord-line">Em                                 F</div>
+    <div class="lyrics-line">Yeah, yeah, yeah, yeah, yeah, yeah</div>
+      
+    </div>
+
+
+
+
+    <div class="lyrics-block" data-time="150.000">
+    <div class="chord-line">Am                                 G</div>
+    <div class="lyrics-line">Whoa, whoa, whoa, whoa, whoa, whoa – want to</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="155.000">
+    <div class="chord-line">Em                                 F</div>
+    <div class="lyrics-line">Yeah, yeah, yeah, yeah, yeah, yeah</div>
+      
+    </div>
+
+       <div class="lyrics-block" data-time="159.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">Fly away on my Zephyr. I feel it more than ever</div>
+      
+    </div>
+
+   
+     <div class="lyrics-block" data-time="167.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">And in this perfect weather. We’ll find a place together</div>
+      
+    </div>
+
+    <div class="lyrics-block" data-time="175.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">In the water where I center my emotion. All the world can pass me by</div>
+      
+    </div>
+    <div class="lyrics-block" data-time="183.000">
+    <div class="chord-line">D*                                 G           A</div>
+    <div class="lyrics-line">Fly away on my Zephyr. We’ll find a place together</div>
+      
+    </div>
+    <div class="lyrics-block" data-time="192.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">D                                 G           A</div>
+    
+  </div>
+
+  <div class="lyrics-block" data-time="201.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">D                                 G           A</div>
+
+ </div>
+
+  <div class="lyrics-block" data-time="206.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">Forever</div>
+
+</div>
+
+  <div class="lyrics-block" data-time="209.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">D                                 G           A</div>
+
+</div>
+
+
+  <div class="lyrics-block" data-time="215.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">D                                 G           A</div>
+
+</div>
+
+
+  <div class="lyrics-block" data-time="224.000">
+    <div class="chord-line"> </div>
+    <div class="lyrics-line">                                 D           </div>
+
+</div>
+
+  <!-- 🔚 Footer -->
+  <footer>
+    © Al Baihaki Ilham - All rights reserved.
+    <br><br>
+    <button onclick="scrollToTop()">⬆️ Back to Top</button>
+  </footer>
+
+  <!-- 🧠 JavaScript -->
+  <script>
+    const audio = document.getElementById("myAudio");
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+        isPlaying = true;
+      } else {
+        audio.pause();
+        isPlaying = false;
+      }
+    }
+
+    const blocks = document.querySelectorAll('.lyrics-block');
+
+    audio.addEventListener('timeupdate', () => {
+      const currentTime = audio.currentTime;
+      blocks.forEach(block => {
+        const time = parseFloat(block.getAttribute('data-time'));
+        block.classList.remove('highlight');
+        if (currentTime >= time && currentTime < time + 5) {
+          block.classList.add('highlight');
+          block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    });
+
+    blocks.forEach(block => {
+      block.addEventListener('click', () => {
+        const time = parseFloat(block.getAttribute('data-time'));
+        audio.currentTime = time;
+        audio.play();
+        isPlaying = true;
+      });
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Fade-in animation
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top <= window.innerHeight && rect.bottom >= 0;
+    }
+
+    function handleScrollFadeIn() {
+      document.querySelectorAll('.fade-up').forEach(el => {
+        if (isInViewport(el)) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    document.addEventListener('keydown', function (e) {
+  if (e.code === 'Space') {
+    e.preventDefault(); // mencegah scroll halaman saat spasi ditekan
+    if (!audio.paused) {
+      audio.pause();
+      isPlaying = false;
+    } else {
+      audio.play();
+      isPlaying = true;
+    }
+  }
+});
+
+    window.addEventListener('scroll', handleScrollFadeIn);
+    window.addEventListener('load', handleScrollFadeIn);
+  </script>
+
+</body>
+</html>

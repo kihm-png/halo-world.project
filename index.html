@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Baihaki Ilham - Beranda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Beranda</a>
+      <a href="tentang saya.html">Tentang Saya</a>
+      <a href="cobs.html">Syair Lagu</a>
+      <a href="tabel.html">Jadwal</a>
+      <div class="dropdown">
+        <button class="nav-button">Menghitung ▾</button>
+        <div class="dropdown-content">
+          <a href="luas.html">Luas</a>
+          <a href="volume.html">Volume</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+    
+      <button class="nav-button" onclick="window.location.href='lgin.html'">Log in</button>
+      <button class="nav-button" onclick="window.location.href='sign in.html'">Sign up</button>
+    </div>
+  </nav>
+  </nav>
+
+
+  <section class="hero-banner">
+  <div class="hero-image">
+    <img src="nhnkjtwm.png" alt="Foto Al Baihaki Ilham">
+  </div>
+  <div class="hero-text">
+    <h1>Al Baihaki Ilham</h1>
+    <p>Selamat datang di website resmi Haki!!. Jelajahi karya seni, syair lagu favorit, jadwal pelajaran, dan lainnya!.</p>
+    <a href="#tentang">Read More</a>
+  </div>
+</section>
+
+
+  <!-- 🎨 Artwork & Tentang Saya -->
+  <section class="card-section">
+    <div class="card1">
+      <h3>Artwork & Tentang Saya</h3>
+      
+      <ul><li><strong>@firezam</strong> - Desainer visual dan penggemar musik.</li></ul>
+      <button class="btn" onclick="document.location='https://www.instagram.com/fieezzam/'">Lihat selengkapnya</button>
+    </div>
+
+    <!-- 🎵 Lagu Favorit -->
+    <div class="card2">
+      <h3>Favorit person</h3>
+      <ul><li>Shigure Ui Ch.</li></ul>
+      <button class="btn" onclick="document.location='https://www.youtube.com/@ui_shig'">Lihat selengkapnya</button>
+    </div>
+
+    <!-- 📚 Jadwal Pelajaran -->
+    <div class="card3">
+      <h3>Shigure Ui's Pixiv</h3>
+     <ul><li>my inspiration to draw</li></ul>
+      <button class="btn" onclick="document.location='https://www.pixiv.net/en/users/431873'">Lihat selengkapnya</button>
+    </div>
+  </section>
+
+  <!-- 🔚 Footer -->
+  <footer>
+    © Al Baihaki Ilham - For submission only.
+    <br><br>
+    <button onclick="scrollToTop()">⬆️ Back to Top</button>
+  </footer>
+
+  <!-- 🧠 JavaScript -->
+  <script>
+
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      // Foto profil fade-in
+      const heroImg = document.querySelector('.hero-img');
+      if (heroImg) {
+        setTimeout(() => {
+          heroImg.style.opacity = '1';
+        }, 300);
+      }
+      
+
+      // Hero text fade-in
+      const heroText = document.querySelector('.hero-text');
+      if (heroText) {
+        setTimeout(() => {
+          heroText.style.opacity = '1';
+        }, 500);  
+      }
+
+      // Card animasi entry
+      const cards = document.querySelectorAll('.card1, .card2, .card3');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.style.opacity = '1';
+        }, 700 + i * 300);
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // hanya sekali
+    }
+  });
+});
+
+document.querySelectorAll('.fade-up').forEach(el => {
+  observer.observe(el);
+});
+
+      // Footer fade-in
+      const footer = document.querySelector('.footer');
+      setTimeout(() => {
+        footer.style.opacity = '1';
+      }, 1500);
+
+      function closeTab() {
+    window.open('', '_self').close();
+  }
+    });
+// Buat card bisa diklik langsung
+document.querySelector('.card1')?.addEventListener('click', () => {
+  document.location='https://www.instagram.com/fieezzam/';
+});
+
+document.querySelector('.card2')?.addEventListener('click', () => {
+  document.location='https://www.youtube.com/@ui_shig';
+});
+
+document.querySelector('.card3')?.addEventListener('click', () => {
+  document.location='https://www.pixiv.net/en/users/431873';
+});
+  
+  
+
+  </script>
+
+
+</body>
+</html>

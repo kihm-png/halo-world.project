@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Saya - Al Baihaki Ilham</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔝 Navbar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Beranda</a>
+      <a href="tentang saya.html">Tentang Saya</a>
+      <a href="cobs.html">Syair Lagu</a>
+      <a href="tabel.html">Jadwal</a>
+      <div class="dropdown">
+        <button class="nav-button">Menghitung ▾</button>
+        <div class="dropdown-content">
+          <a href="luas.html">Luas</a>
+          <a href="volume.html">Volume</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+    
+      <button class="nav-button" onclick="window.location.href='lgin.html'">Log in</button>
+      <button class="nav-button" onclick="window.location.href='sign in.html'">Sign up</button>
+    </div>
+  </nav>
+  </nav>
+
+
+  <section class="hero-banner fade-up">
+    <div class="hero-image">
+      <img src="gwej.jpg" alt="Foto Profil">
+    </div>
+    <div class="hero-2">
+      <h1>Al Baihaki Ilham</h1>
+      <p>Saya adalah seorang ilustrator dan animator sekaligus pelajar DKV di SMKN 1 Kota Tangerang yang sangat gemar menggabungkan estetika game, musik, dan seni digital ke dalam Jiwa dan perasaan. Berfokus pada layout yang ekspresif, animasi halus, dan warna.</p>
+    </div>
+  </section>
+
+ 
+  <section class="card-section fade-up">
+    <h2 style="color:#0077cc; margin-bottom:1rem;">Karya Ilustrasi</h2>
+    <div class="grid-container">
+      <div class="grid-card"><img src="nicolewwmm.png" class="grid-img" alt="Ilustrasi 1"></div>
+      <div class="grid-card"><img src="untitledapel2.png" class="grid-img" alt="Ilustrasi 2"></div>
+      <div class="grid-card"><img src="kebon pak amba garut.jpg" class="grid-img" alt="Ilustrasi 3"></div>
+      <div class="grid-card"><img src="shigure ui2qx.png" class="grid-img" alt="Ilustrasi 4"></div>
+      <div class="grid-card"><img src="nhnkjtwm.png" class="grid-img" alt="Ilustrasi 5"></div>
+      <div class="grid-card"><img src="bdarrt11.png" class="grid-img" alt="Ilustrasi 6"></div>
+      <div class="grid-card"><img src="illust1,09wm.png" class="grid-img" alt="Ilustrasi 7"></div>
+    </div>
+  </section>
+
+
+<section class="card-section fade-up">
+  <h2 style="color:#0077cc; margin-bottom:1rem;">Karya Animasi (MP4)</h2>
+  <div class="grid-container">
+    <div class="grid-card">
+      <video class="grid-video" controls>
+        <source src="kelarrrrr.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+    </div>
+    <div class="grid-card">
+      <video class="grid-video" controls>
+        <source src="finish.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+    </div>
+    <div class="grid-card">
+      <video class="grid-video" controls>
+        <source src="flaa_1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 📷 Fotografi Section -->
+  <section class="card-section fade-up">
+    <h2 style="color:#0077cc; margin-bottom:1rem;">Karya Fotografi</h2>
+    <div class="grid-container">
+      <div class="grid-card"><img src="DSC01529`1.jpg" class="grid-img" alt="Foto 1"></div>
+      <div class="grid-card"><img src="untitled (1 of 1).jpg" class="grid-img" alt="Foto 2"></div>
+    </div>
+  </section>
+
+<button class="nav-button" onclick="document.location='https://www.instagram.com/fieezzam/'">instagram</button>
+      <button class="nav-button" onclick="document.location='https://web.facebook.com/Kihm11?locale=id_ID'">facebook</button>
+
+  <!-- 🔚 Footer -->
+  <footer>
+    © Al Baihaki Ilham - All rights reserved.
+    <br><br>
+    <button onclick="scrollToTop()">⬆️ Back to Top</button>
+  </footer>
+
+  <!-- 🧠 JavaScript Fade-In -->
+
+
+  <script>
+
+
+
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+      );
+    }
+
+    function handleScrollFadeIn() {
+      const fadeElements = document.querySelectorAll('.fade-up');
+      fadeElements.forEach(el => {
+        if (isInViewport(el)) {
+          el.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', handleScrollFadeIn);
+    window.addEventListener('load', handleScrollFadeIn);
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+
+  document.querySelectorAll('.grid-card, .card1, .card2, .card3').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.add('bounce-on-click');
+      setTimeout(() => {
+        card.classList.remove('bounce-on-click');
+      }, 600); // durasi animasi
+    });
+  });
+
+  
+</script>
+  </script>
+
+</body>
+</html>
